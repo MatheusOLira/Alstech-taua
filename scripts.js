@@ -7,16 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-// Header muda ao rolar
-window.addEventListener('scroll', () => {
-  const header = document.getElementById('header');
 
-  if (window.scrollY > 50) {
-    header.style.background = "rgba(15, 23, 42, 0.95)";
-  } else {
-    header.style.background = "rgba(15, 23, 42, 0.7)";
-  }
-});
 
 const track = document.getElementById("carouselTrack");
 const cards = document.querySelectorAll(".review");

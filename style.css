@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(15, 23, 42, 0.7);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e5e7eb;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(15,23,42,0.8), #0f172a),
+              url('https://images.unsplash.com/photo-1510557880182-3c1cbbf4c8a7');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  opacity: 0.8;
+}
+
+/* BOTÃO */
+.btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SEÇÕES */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* DARK SECTION */
+.dark {
+  background: #020617;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 15px;
+  width: 260px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.08);
+}
+
+/* MAPA */
+.map iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h2 {
+    font-size: 32px;
+  }
+}

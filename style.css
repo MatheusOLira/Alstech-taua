@@ -127,6 +127,43 @@ nav ul li a:hover {
   background: rgba(255,255,255,0.08);
 }
 
+.image-carousel {
+  overflow: hidden;
+  margin-top: 40px;
+  position: relative;
+}
+
+.image-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.image-track img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* efeito hover */
+.image-track img:hover {
+  transform: scale(1.1);
+}
+
+/* animação infinita */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
+
 /* MAPA */
 .map iframe {
   width: 100%;

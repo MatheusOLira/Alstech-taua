@@ -70,3 +70,20 @@ track.addEventListener("mouseleave", startSlide);
 
 // iniciar
 startSlide();
+
+const elements = document.querySelectorAll('.animate');
+
+function revealOnScroll() {
+  const trigger = window.innerHeight * 0.85;
+
+  elements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+
+    if (top < trigger) {
+      el.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();

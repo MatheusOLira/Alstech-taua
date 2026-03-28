@@ -39,25 +39,37 @@
     </section>
 
     <!-- SOBRE -->
-    <section id="sobre" class="section">
-        <h2>Sobre a Alstech</h2>
-        <p>
-            A Alstech é referência em assistência técnica em Tauá, especializada em manutenção de celulares,
-            com serviços rápidos, <br>seguros e com garantia. Realizamos desde troca de tela e bateria até
-            reparos avançados em placa e sistema, sempre utilizando peças de qualidade.
-            <br>
+    <section id="sobre" class="section sobre">
+        <div class="sobre-container">
 
-            Também atendemos na área de informática, oferecendo manutenção de notebooks e montagem de
-            computadores, <br>incluindo PCs gamer sob medida, com foco em desempenho, estabilidade e custo-benefício.
-            <br>
+            <!-- TEXTO -->
+            <div class="sobre-texto animate from-left">
+                <h2>Sobre a Alstech</h2>
 
-            Nosso diferencial está no atendimento: diagnóstico transparente, preço justo e agilidade na entrega,
-            com muitos serviços concluídos no mesmo dia.
-            <br>
+                <p>
+                    A Alstech é uma assistência técnica em Tauá especializada em manutenção de celulares,
+                    oferecendo serviços rápidos, seguros e com garantia.
+                </p>
 
-            Se você procura confiança, qualidade e rapidez, a Alstech é a escolha certa.
-        </p>
-        <p><strong>📱 Celulares | 💻 Notebooks | 🖥️ PCs Gamer</strong></p>
+                <p>
+                    Também atuamos com manutenção de notebooks e montagem de PCs gamer personalizados,
+                    garantindo desempenho e confiabilidade para qualquer necessidade.
+                </p>
+
+                <!-- DESTAQUES -->
+                <div class="sobre-destaques">
+                    <div>⚡ Atendimento rápido</div>
+                    <div>🛡️ Garantia nos serviços</div>
+                    <div>💰 Preço justo</div>
+                </div>
+            </div>
+
+            <!-- IMAGEM -->
+            <div class="sobre-img animate from-right">
+                <img src="assets/Interna.jpeg" alt="Assistência técnica Alstech">
+            </div>
+
+        </div>
     </section>
 
     <!-- SERVIÇOS -->
@@ -158,7 +170,8 @@
     <section id="contato" class="section dark">
         <h2>Fale Conosco</h2>
         <p>Atendimento rápido pelo WhatsApp</p>
-        <a href="https://wa.me/5588997479170" class="btn">Chamar no WhatsApp</a>
+        <a href="https://wa.me/5588997479170?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento"
+            class="btn">Chamar no WhatsApp</a>
     </section>
 
     <!--CONFIANÇA-->
@@ -185,7 +198,7 @@
 
     <!-- MAPA -->
     <section id="localizacao" class="map">
-        <h1>Localização</h1>
+        <h2>Localização</h2>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3967.936194721562!2d-40.29410171508789!3d-6.003499984741211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7981f9ddc856c57%3A0xf339cde083154d43!2sALSTECH%20Assist%C3%AAncia%20T%C3%A9cnica%20de%20Celulares!5e0!3m2!1spt-BR!2sbr!4v1774637024781!5m2!1spt-BR!2sbr"
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -299,6 +312,11 @@
         <p>© 2026 Alstech - Todos os direitos reservados</p>
         <p>Assistência Técnica em Tauá - CE</p>
     </footer>
+
+    <div id="imageModal" class="image-modal">
+        <span class="close">&times;</span>
+        <img id="modalImg">
+    </div>
 
     <a href="https://wa.me/5588997479170?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento"
         class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">

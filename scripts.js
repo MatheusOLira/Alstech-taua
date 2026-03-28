@@ -71,7 +71,7 @@ track.addEventListener("mouseleave", startSlide);
 // iniciar
 startSlide();
 
-const elements = document.querySelectorAll('.animate');
+const elements = document.querySelectorAll('.animate, .section');
 
 function revealOnScroll() {
   const trigger = window.innerHeight * 0.85;
@@ -87,3 +87,36 @@ function revealOnScroll() {
 
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
+
+const images = document.querySelectorAll('.image-track img');
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImg');
+const closeBtn = document.querySelector('.image-modal .close');
+const imageTrack = document.querySelector('.image-track');
+
+// clicar na imagem
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    modal.classList.add('show');
+    modalImg.src = img.src;
+
+    // PAUSAR CARROSSEL
+    imageTrack.style.animationPlayState = 'paused';
+  });
+});
+
+// fechar ao clicar no X
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('show');
+
+  // VOLTAR CARROSSEL
+  imageTrack.style.animationPlayState = 'running';
+});
+
+// fechar ao clicar fora da imagem
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.remove('show');
+    imageTrack.style.animationPlayState = 'running';
+  }
+});
